@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+<form action="http://localhost:5000/update/person" method="POST">
+    <p>ID:</p>
+    <p><input name="ID" readonly type="number" value="{{person.id}}"/></p>
+    <p>name:</p>
+    <p><input name="name" type="text" value="{{person.name}}"/></p>
+    <p>Age:</p>
+    <p><input name="age" type="number" value="{{person.age}}"/></p>
+    <p><input type="submit" value="submit"/></p>
+</form>
+</body>
+</html>

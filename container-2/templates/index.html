@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<body>
+<center>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in rows %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <p>
+    <form>
+        <button formaction="http://localhost:5000/insert_data" type="submit">insert data</button>
+        <button formaction="http://localhost:5000/delete_data" type="submit">delete data</button>
+        <button formaction="http://localhost:5000/update_data" type="submit">update data</button>
+    </form>
+    </p>
+</center>
+</body>
+</html>

@@ -1,0 +1,1 @@
+CREATE TABLE information(id integer primary key, name varchar(25), age integer);
